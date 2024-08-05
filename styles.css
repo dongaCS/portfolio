@@ -79,7 +79,7 @@ nav ul li a {
 
 .project-card {
     width: 300px;
-    height: 300px;
+    height: 350px;
     perspective: 1000px;
     margin: 10px;
     
@@ -106,11 +106,14 @@ nav ul li a {
     backface-visibility: hidden;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-card .front img {
     width: 100%;
     height: 90%;
+    padding-bottom: 10px;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -124,19 +127,11 @@ nav ul li a {
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 5%;
 }
 
-.project-card .back span {
-    text-align: left;
-    overflow: scroll;
-    height: 75%;
-}
-
 .project-card .back .icons {
-    height: 15%;
+    height: 12%;
 }
 
 .project-card .back img {
@@ -144,10 +139,17 @@ nav ul li a {
     width: 30px;
 }
 
+.project-card .back span {
+    text-align: left;
+    overflow: scroll;
+    height: 80%;
+}
+
 .project-card .back .buttons {
     display: grid;
     grid-auto-flow: column;
     grid-column-gap: 20px;
+    padding-top: 5px;
 }
 
 .project-card .project-card-button {
