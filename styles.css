@@ -1,10 +1,19 @@
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
 body {
     position: absolute;
     width: 70%;
     left: 15%;
     right: 15%;
+    margin: 0;
     background-color: antiquewhite;
 }
+
+
 
 /********************* nav bar ********************/
 header {
@@ -73,6 +82,7 @@ nav ul li a {
     height: 300px;
     perspective: 1000px;
     margin: 10px;
+    
 }
 
 .project-card .card-inner {
@@ -84,8 +94,12 @@ nav ul li a {
     cursor: pointer; 
 }
 
+.project-card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
 .project-card .front, .project-card .back {
-    /* background-color: paleturquoise; */
+    background-color: white;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -94,7 +108,7 @@ nav ul li a {
     box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
 }
 
-.project-card img {
+.project-card .front img {
     width: 100%;
     height: 90%;
     border-radius: 10px 10px 0px 0px;
@@ -106,28 +120,40 @@ nav ul li a {
 }
 
 .project-card .back {
-    background-color: red;
+    background-color: white;     /* must have a background color ot front shows */
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
 }
 
-.project-card.flipped .card-inner {
-    transform: rotateY(180deg);
+.project-card .back span {
+    text-align: left;
+    overflow: scroll;
+    height: 75%;
 }
 
-.project-card-button {
+.project-card .back .icons {
+    height: 15%;
+}
+
+.project-card .back img {
+    height: 30px;
+    width: 30px;
+}
+
+.project-card .back .buttons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+}
+
+.project-card .project-card-button {
     display: inline-block;
-    /* background-color: darkcyan;
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 4px;
-    margin-top: 10px; */
-}
-  
-.project-card-button:hover {
-    background-color: #0056b3;
+    width: 100px;
+    height: 25px;
 }
 
 

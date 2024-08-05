@@ -3,7 +3,9 @@ const projectCards = document.querySelectorAll('.project-card');
 
 // flip card
 projectCards.forEach(card => {
-    card.addEventListener('click', () => {
-        card.classList.toggle('flipped');
+    card.addEventListener('click', (e) => {
+        if (e.target.tagName != "BUTTON") {
+            card.classList.toggle('flipped')
+        }
     });
 });

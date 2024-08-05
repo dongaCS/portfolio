@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
-    
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
     <header>
@@ -21,12 +19,12 @@
     </header>
 
     <section id="home">
-        <h2>Home Section</h2>
+        <h2>Home</h2>
         <p> maybe a nice banner here </p>
     </section>
 
     <section id="about">
-        <h2>About Section</h2>
+        <h2>About</h2>
         <div class="about-content">
             <div class="column">
                 <img src="path_to_image" alt="Image">
@@ -38,7 +36,7 @@
     </section>
 
     <section id="skills">
-        <h2>Skills Section</h2> 
+        <h2>Programming Languages</h2> 
         <div class="programming">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
@@ -48,27 +46,37 @@
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" />
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" />
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ocaml/ocaml-original-wordmark.svg" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-plain-wordmark.svg" />
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
         </div>
     </section>
 
     <section id="projects">
-        <h2>Projects Section</h2>
+        <h2>Projects</h2>
 
         <div class="projects-container">
 
             <div class="project-card">
                 <div class="card-inner">
                     <div class="front">
-                        <img src="https://raw.githubusercontent.com/dongaCS/pokedex/main/v2-ejs/preview.png" alt="Project Image">
+                        <img src="https://raw.githubusercontent.com/dongaCS/pokedex/main/v2-ejs/preview.png" alt="PokeDex.png">
                         <h3>PokeDex</h3>
                     </div>
                     <div class="back">
-                        <p>Project description text.</p>
+                        <div class="icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
+                        </div>
+                        <span> 
+                            A UI that processes JSON file from <a href="https://pokeapi.co/">PokeApi</a> about a specific pokemon upon user request. Targeted data from promised JSON: Name, Cry, Image, Type, Abilities, Flavor, ID, Height, Weight, Base Stats, Gender Rates and Evolution Chain. Cry plays on button click. Base Stats and Gender Rates are displayed as charts with <a href="https://www.chartjs.org/">Charts.js</a> Currently on verison 2 of app.
+                        </span>
+
                         <div class="buttons">
-                            <button class="project-card-button">Button 1</button>
-                            <button class="project-card-button">Button 2</button>
+                            <button onclick="window.open('https://github.com/dongaCS/pokedex/tree/main/v2-ejs')" class="project-card-button">GitHub</button>
+                            <button onlcick="alert('still working on it')"
+                            class="project-card-button">Live</button>
                         </div>
                     </div>
                 </div>
