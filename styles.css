@@ -1,8 +1,8 @@
 body {
     position: absolute;
-    width: 80%;
-    left: 10%;
-    right: 10%;
+    width: 70%;
+    left: 15%;
+    right: 15%;
     background-color: antiquewhite;
 }
 
@@ -62,7 +62,7 @@ nav ul li a {
     width: 300px;
     height: 300px;
     perspective: 1000px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .project-card .card-inner {
@@ -113,11 +113,18 @@ nav ul li a {
 
 
 /********************* responsive ********************/
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .about-content {
         flex-direction: column;
     }
     .project-card {
         width: 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .project-card {
+        width: 48%;
+        margin: 1%;
     }
 }
