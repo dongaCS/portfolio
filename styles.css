@@ -123,7 +123,7 @@ nav ul li a {
 }
 
 .project-card .back {
-    background-color: white;     /* must have a background color ot front shows */
+    background-color: white;     /* must have a background color or front shows */
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
