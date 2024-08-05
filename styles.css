@@ -48,6 +48,27 @@ nav ul li a {
     height: auto;
 }
 
+/********************* skills ********************/
+.programming {
+    text-align: center;
+}
+
+.programming img {
+    width: 100x;
+    height: 100px;
+    padding: 10px;
+}
+
+.support {
+    text-align: center;
+}
+
+.support img {
+    width: 30x;
+    height: 30px;
+    padding: 5px;
+}
+
 /********************* project ********************/
 .projects-container {
     /* background-color: blue; */
