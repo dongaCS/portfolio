@@ -4,19 +4,26 @@
      box-sizing: border-box; 
 }
 
+
 body {
     position: absolute;
-    width: 70%;
-    left: 15%;
-    right: 15%;
+    width: 100%;
     margin: 0;
-    background-color: antiquewhite;
+    font-family: "Gill Sans", sans-serif, Arial, Helvetica ;
+}
+
+.inner-body {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    margin: 0;
 }
 
 /********************* nav bar ********************/
 header {
     background-color: #333;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 nav ul {
@@ -24,11 +31,12 @@ nav ul {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-size: 2em;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: auto;
 }
 
 nav ul li a {
@@ -37,16 +45,27 @@ nav ul li a {
     padding: 5px 10px;
 }
 
+nav ul li a:hover {
+    background-color: white;
+    color: #333;
+}
+
 /********************* about ********************/
 .about-content {
-    background-color: beige;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.column {
-    flex: 1;
+.column-left {
+    /* background-color: aqua; */
+    width: 40%;
+    padding: 20px;
+}
+
+.column-right {
+    /* background-color: green; */
+    width: 60%;
     padding: 20px;
 }
 
@@ -57,7 +76,6 @@ nav ul li a {
 
 /********************* skills ********************/
 .programming {
-    background-color: beige;
     text-align: center;
 }
 
@@ -69,13 +87,12 @@ nav ul li a {
 
 /********************* project ********************/
 .projects-container {
-    background-color: beige;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    padding-top: 30px;
-    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 50px;
 }
 
 .project-card {
@@ -109,6 +126,8 @@ nav ul li a {
     box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
     justify-content: center;
     align-items: center;
+    border: solid;
+    border-width: 1px;
 }
 
 .project-card .front img {
@@ -163,20 +182,31 @@ nav ul li a {
 /********************* footer ********************/
 footer {
     background-color: #333;
-    margin-top: 10px;
-    padding: 10px 0 0 0;
-    align-content: center;
+    position:absolute;
+    width: 100%;
 }
 
-footer h2 {
+footer .social  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer i {
+    font-size: 2.75em;
+    padding-left: 40px;
+}
+
+footer i:hover {
+    font-size: 3em;
+    color: palegreen;
+    
+}
+
+.fa-brands, .fa-solid {
     color: white;
-    text-align: center;
+    
 }
-
-.footer-bottom p{
-    color: white;
-}
-
 
 /********************* responsive ********************/
 @media (max-width: 1000px) {
