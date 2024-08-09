@@ -13,8 +13,6 @@ body {
     background-color: antiquewhite;
 }
 
-
-
 /********************* nav bar ********************/
 header {
     background-color: #333;
@@ -41,10 +39,10 @@ nav ul li a {
 
 /********************* about ********************/
 .about-content {
+    background-color: beige;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: beige;
 }
 
 .column {
@@ -59,6 +57,7 @@ nav ul li a {
 
 /********************* skills ********************/
 .programming {
+    background-color: beige;
     text-align: center;
 }
 
@@ -70,11 +69,13 @@ nav ul li a {
 
 /********************* project ********************/
 .projects-container {
-    /* background-color: blue; */
+    background-color: beige;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 15px;
 }
 
 .project-card {
@@ -156,6 +157,24 @@ nav ul li a {
     display: inline-block;
     width: 100px;
     height: 25px;
+}
+
+
+/********************* footer ********************/
+footer {
+    background-color: #333;
+    margin-top: 10px;
+    padding: 10px 0 0 0;
+    align-content: center;
+}
+
+footer h1, h2, h3, h4 {
+    color: white;
+    text-align: center;
+}
+
+.footer-bottom p{
+    color: white;
 }
 
 
