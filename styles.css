@@ -14,11 +14,12 @@ body {
 
 .inner-body {
     position: relative;
-    width: 80%;
-    left: 10%;
-    right: 10%;
+    width: 70%;
+    left: 15%;
+    right: 15%;
     margin: 0;
 }
+
 
 /********************* nav bar ********************/
 header {
@@ -50,6 +51,21 @@ nav ul li a:hover {
     color: #333;
 }
 
+
+/********************* home ********************/
+#banner {
+    background-color: #2389da;
+    height: 300px;
+    text-align: center;
+    align-content: center;
+    font-size: calc(0.70vw + 0.70vh); /* changes text with div */
+}
+
+canvas {
+    display: block;
+  }
+
+
 /********************* about ********************/
 .about-content {
     display: flex;
@@ -58,13 +74,11 @@ nav ul li a:hover {
 }
 
 .column-left {
-    /* background-color: aqua; */
     width: 40%;
     padding: 20px;
 }
 
 .column-right {
-    /* background-color: green; */
     width: 60%;
     padding: 20px;
 }
@@ -73,6 +87,7 @@ nav ul li a:hover {
     max-width: 100%;
     height: auto;
 }
+
 
 /********************* skills ********************/
 .programming {
@@ -84,6 +99,7 @@ nav ul li a:hover {
     height: 100px;
     padding: 10px;
 }
+
 
 /********************* project ********************/
 .projects-container {
@@ -100,7 +116,6 @@ nav ul li a:hover {
     height: 350px;
     perspective: 1000px;
     margin: 10px;
-    
 }
 
 .project-card .card-inner {
@@ -179,6 +194,12 @@ nav ul li a:hover {
 }
 
 
+.project-card .project-card-button a{
+    text-decoration: none;
+    color: black;
+}
+
+
 /********************* footer ********************/
 footer {
     background-color: #333;
@@ -199,7 +220,7 @@ footer i {
 
 footer i:hover {
     font-size: 3em;
-    color: palegreen;
+    color: #2389da
     
 }
 
@@ -207,6 +228,7 @@ footer i:hover {
     color: white;
     
 }
+
 
 /********************* responsive ********************/
 @media (max-width: 1000px) {

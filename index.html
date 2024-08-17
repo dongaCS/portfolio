@@ -6,6 +6,10 @@
     <title>Your Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js" integrity="sha512-lvddmeF7aHRJwdbJeYThWd5kWSjTrXBzCRF/jYROiHzmhMJ1dEXfGH5Q7ft0yhizXTopAETG03s5ajTflauijA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
 </head>
 <body>
     <header>
@@ -22,7 +26,8 @@
     <div class="inner-body">
         <section id="home">
             <h2>Home</h2>
-            <p> maybe a nice banner here, probably include contacts here </p>
+            <div id="banner">
+            </div>
         </section>
 
         <section id="about">
@@ -35,7 +40,11 @@
                     </p>
                 </div>
                 <div class="column-right">
-                    <p>About text goes here. Lorem ipsum odor amet, consectetuer adipiscing elit. Blandit vivamus praesent ante egestas commodo ut id primis. Facilisi suspendisse faucibus purus nostra fringilla. Pellentesque a imperdiet malesuada nisi curabitur. Pulvinar porttitor venenatis montes nibh proin ut praesent purus tellus. Taciti tempor est lobortis senectus quisque. Proin aptent convallis luctus curabitur curae rhoncus.</p>
+                    <p> Salutations! I'm Anna, a Computer Science graduate from the University of Maryland -  College Park. I have a strong passion for technology and problem-solving. After graduation, I supported my parents' business during COVID-19, refining my skills in communication, coding, team-building, and management.
+                    </p>
+                    <p>
+                    Beyond work, I love tinkering with gadgets, learning new skills, figuring out how things work, and solving little problems with code. I enjoy gaming, spending time outdoors with friends, and connecting with new people online. 
+                    </p>
                 </div>
             </div>
         </section>
@@ -44,11 +53,11 @@
             <h2>Programming Languages</h2> 
             <div class="programming">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-plain.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-plain.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ocaml/ocaml-original-wordmark.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
@@ -110,19 +119,24 @@
                 <div class="project-card">
                     <div class="card-inner">
                         <div class="front">
-                            <img src="project_image.jpg" alt="Project Image">
-                            <h3>Project Title</h3>
+                            <img src="https://github.com/dongaCS/pixel-ascii-art/blob/main/images/gif-sketch.png?raw=true" alt="discord-py.png">
+                            <h3>Pixel-Ascii Art</h3>
                         </div>
                         <div class="back">
-                            <p>Project description text.</p>
+                            <div class="icons">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" />
+                            </div>
+                            <span> 
+                                Sometimes life gives you lemons but instead of taking that lemon, you decide to grow a lemon tree, harvest the lemons and then make lemonade. Rather than using a converter, I made one. This project uses the <a href="https://p5js.org/reference/">p5.js</a> to outline a canvas, populated it with an image, creates a pixel mapping of the image and colors it. To create the Ascii masking, I grayscale the pixels and mapped them to characters based on the intensity of the gray. 
+                            </span>
                             <div class="buttons">
-                                <button>Button 1</button>
-                                <button>Button 2</button>
+                                <button onclick="window.open('https://github.com/dongaCS/pixel-ascii-art')" class="project-card-button">GitHub</button>
+                                <button class="project-card-button"><a href="#home">Live</a></button>
                             </div>
                         </div>
                     </div>
                 </div> <!-- end of card  -->
-
 
             <!-- cards go above this -->
             </div> <!-- end of projects container-->
@@ -140,6 +154,7 @@
     </footer>   
 
     <script src="script.js"></script>
+    <script src="sketch.js"></script>
 
 </body>
 </html>
