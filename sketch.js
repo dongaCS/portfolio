@@ -14,7 +14,7 @@ function setup() {
   let wDiv = div.offsetWidth;
   let hDiv = div.offsetHeight;
 
-  // contains animation in gif
+  // contains gif in div
   let container = createCanvas(wDiv, hDiv); // sets width and height
   container.parent("banner");
 }
@@ -51,7 +51,6 @@ function draw() {
       fill(255); 
 
       // drawing the letters on canvas
-      textSize('w'); // large words
       textAlign(CENTER, CENTER);
       text(ascii.charAt(densityMap), x * w , y * h)
     }
