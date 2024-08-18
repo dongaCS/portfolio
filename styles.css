@@ -137,7 +137,7 @@ canvas {
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 11px;
     box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
     justify-content: center;
     align-items: center;
