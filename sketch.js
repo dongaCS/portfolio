@@ -5,7 +5,7 @@ let img;
 let pixelation_level = 5;
 
 function preload() {
-  img = loadImage("fish.gif")
+  img = loadImage("./images/fish.gif")
 }
 
 function setup() {
