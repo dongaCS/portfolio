@@ -246,3 +246,15 @@ footer i:hover {
         margin: 1%;
     }
 }
+
+/********************* hides scroll bar ********************/
+/* Chrome and Safari */
+.project-card .back span::-webkit-scrollbar {
+    display: none;
+}
+
+/* IE, Edge and Firefox */
+.project-card .back span{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
