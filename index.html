@@ -9,6 +9,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js" integrity="sha512-lvddmeF7aHRJwdbJeYThWd5kWSjTrXBzCRF/jYROiHzmhMJ1dEXfGH5Q7ft0yhizXTopAETG03s5ajTflauijA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
     
 </head>
 <body>
@@ -120,6 +121,30 @@
                 <div class="project-card">
                     <div class="card-inner">
                         <div class="front">
+                            <img src="./images/roast.png" alt="roast-api.png">
+                            <h3>Roast API</h3>
+                        </div>
+                        <div class="back">
+                            <div class="icons">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                            </div>
+                            <span>Developed a REST API using Express and Mongoose, which was deployed via Cloudflare due to limited free hosting options. The API collects feedback by querying various bots for insults, which are then compiled into the database. Current database has approximately one hundred roast.
+                            <br><br>
+                            <span id="roast" style="font-weight:bold"> 
+                                
+                            </span>
+                            </span>
+                            <div class="buttons">
+                                <button onclick="window.open('https://github.com/dongaCS/mini-apis/tree/main/roast')" class="project-card-button">GitHub</button>
+                                <button id="roast-me">Get Roasted</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of card  -->
+
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="front">
                             <img src="./images/fishSample.gif" alt="discord-py.png">
                             <h3>Pixel-Ascii Art</h3>
                         </div>
@@ -142,7 +167,7 @@
                 <div class="project-card">
                     <div class="card-inner">
                         <div class="front">
-                            <img src="https://raw.githubusercontent.com/dongaCS/prediction-model-nyc/main/queens/qOne.png" alt="Queens One Family Home" style="border-bottom: 1px solid black;">
+                            <img src="https://raw.githubusercontent.com/dongaCS/prediction-model-nyc/main/queens/qOne.png" alt="Queens One Family Home">
                             <h3>NYC Prediction Model</h3>
                         </div>
                         <div class="back">
@@ -158,6 +183,8 @@
                         </div>
                     </div>
                 </div> <!-- end of card  -->
+                
+                
                 
 
             <!-- cards go above this -->
@@ -202,6 +229,7 @@
 
     <script src="script.js"></script>
     <script src="sketch.js"></script>
+
 
 </body>
 </html>
