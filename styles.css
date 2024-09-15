@@ -4,7 +4,6 @@
      box-sizing: border-box; 
 }
 
-
 body {
     position: absolute;
     width: 100%;
@@ -51,6 +50,11 @@ nav ul li a:hover {
     color: #333;
 }
 
+nav ul li i:hover{
+    background-color: white;
+    color: #333;
+}
+
 
 /********************* home ********************/
 #banner {
@@ -63,7 +67,7 @@ nav ul li a:hover {
 
 canvas {
     display: block;
-  }
+}
 
 
 /********************* about ********************/
@@ -191,12 +195,53 @@ canvas {
     display: inline-block;
     width: 100px;
     height: 25px;
+    
 }
 
+.project-card .project-card-button:hover {
+    background-color: #333;
+    color: white;
+}
 
 .project-card .project-card-button a{
     text-decoration: none;
     color: black;
+}
+
+
+/********************* contact *******************/
+.form-container {
+    background-color: #2389da;
+    position: relative;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.form-container button {
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.form-container button:hover {
+    background-color: #333;
+    color: white;
 }
 
 
